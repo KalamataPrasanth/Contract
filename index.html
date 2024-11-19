@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="letter-container">
+        <header>
+            <h1>Contract</h1>
+            <p><strong>Date:</strong><span id="contract-date"></span></p>
+        </header>
+
+        <section class="letter-body">
+            <p>
+                Dear <strong>Likhit Venkatesh Pativada</strong>,
+            </p>
+            <p>This declaration formalizes the agreement as follows:</p>
+            <p>
+                1. If you, Likhit Venkatesh Pativada, receive a joining letter by the end of this year
+                (<strong>December 31, 2024</strong>), you agree to pay a sum of ₹2000 (Two Thousand Rupees only) to me, <strong>Kalamata Prasanth</strong>.
+            </p>
+            <p>
+                2. However, in the rare and unfortunate circumstances, should the aforemention event not transpire, it is understood that I, in my capacity, will address the matter for the same amount.
+            </p>
+            <p> 3. The terms of this agreement are binding and acknowledged by both parties and the witnesses.</p>
+
+        </section>
+
+        <footer class="signature-section">
+            <div class="signature-block">
+                <label for="party-a-sign">Kalamata Prasanth</label>
+                <input type="text" id="party-a-sign" placeholder="Sign here"/>
+            </div>
+            <div class="signature-block">
+                <label for="party-b-sign">Likhit Venkatesh Pativada</label>
+                <input type="text" id="party-b-sign" placeholder="Sign here"/>
+            </div>
+            <div class="signature-block">
+                <label for="witness-1-sign">B Bhanu Kiran</label>
+                <input type="text" id="witness-1-sign" placeholder="Sign here"/>
+            </div>
+            <div class="signature-block">
+                <label for="witness-2-sign">Aishanya Pattanaik</label>
+                <input type="text" id="witness-2-sign" placeholder="Sign here"/>
+            </div>
+        </footer>
+
+        <button id="submit-btn">Finalize Agreement</button>
+        <p id="status-msg"></p>
+
+        <button id="download-pdf-btn" style="display: none;">Download Signed PDF</button>
+
+        <div id="party-a-sign-display"></div>
+        <div id="party-b-sign-display"></div>
+        <div id="witness-1-sign-display"></div>
+        <div id="witness-2-sign-display"></div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
